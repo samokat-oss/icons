@@ -1,0 +1,21 @@
+{
+  "name": "@samokat/operations-icons",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./build/index && tsc --project ./tsconfig.json "
+  },
+  "dependencies": {
+    "@svgr/core": "^4.3.3",
+    "@svgr/plugin-prettier": "^4.3.2",
+    "@svgr/plugin-svgo": "^4.3.1",
+    "@types/react": "^16.9.11",
+    "fs-extra": "^8.1.0",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
