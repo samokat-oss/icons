@@ -10,7 +10,7 @@
     "jsx": "react",
     "outDir": "dist",
     "declaration": true,
-    "baseUrl": "./src"
+    "baseUrl": "./icons"
   },
-  "include": ["src/**/*"]
+  "include": ["icons/**/*"]
 }

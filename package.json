@@ -4,9 +4,12 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "node ./build/index && tsc --project ./tsconfig.json "
+    "build": "node ./build/index && tsc --project ./tsconfig.json",
+    "s": "yarn soda"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@solid-soda/scripts": "^1.14.9",
     "@svgr/core": "^4.3.3",
     "@svgr/plugin-prettier": "^4.3.2",
     "@svgr/plugin-svgo": "^4.3.1",
