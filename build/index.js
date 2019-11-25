@@ -1,3 +1,3 @@
-const generateIcons = require('./generateIcons').generateIcons;
+const { generateIcons } = require('./generateIcons');
 
 generateIcons();
