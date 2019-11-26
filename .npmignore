@@ -1,6 +1,6 @@
 src
 build
+icons
 .eslintrc.js
 tsconfig.json
-types.d.ts
 yarn.lock

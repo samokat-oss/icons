@@ -41,7 +41,7 @@ const createSvgComponents = svgFiles => {
       const transpiledIcon = await svgr(data, SVGROptions, {
         componentName: `Svg${filenameWithoutExt}`,
       });
-      return await fs.writeFile(tsxFilePath, transpiledIcon);
+      return fs.writeFile(tsxFilePath, transpiledIcon);
     }),
   );
 };
@@ -55,8 +55,7 @@ const createIndexFile = async (svgFiles, filepath) => {
       return `export { default as ${filename} } from './${filename}';`;
     })
     .join('\n');
-
-  return await fs.writeFile(filepath, importLines);
+  return fs.writeFile(filepath, importLines);
 };
 
 const clearOutput = async () => {
